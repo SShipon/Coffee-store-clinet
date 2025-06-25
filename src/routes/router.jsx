@@ -1,18 +1,17 @@
 // src/router.js
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
+import Home from "../pages/Home";
 import AddCoffee from "../components/AddCoffee";
 import UpdateCoffee from "../components/UpdateCoffee";
 import MainLayout from "../layout/MainLayout";
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />, // ✅ Layout with Header/Footer
     children: [
-      {
-        index: true, // default route
-        element: <App />,
+        {
+        path: "/",
+        element: <Home />,
       },
       {
         path: "addCoffee",

@@ -9,7 +9,7 @@ const MainLayout = () => {
     <div>
       <Header />
       <main className="min-h-screen">
-        <Outlet /> {/* 👉 এই জায়গায় page content আসবে */}
+        <Outlet />
       </main>
       <Footer />
     </div>  
