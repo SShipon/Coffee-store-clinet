@@ -14,21 +14,13 @@ const Header = () => {
           About
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/services" className={({ isActive }) => isActive ? "text-primary font-bold" : ""}>
-          Services
-        </NavLink>
-      </li>
+        
       <li>
         <NavLink to="/contact" className={({ isActive }) => isActive ? "text-primary font-bold" : ""}>
           Contact
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/coffee" className={({ isActive }) => isActive ? "text-primary font-bold" : ""}>
-          Coffee
-        </NavLink>
-      </li>
+     
     </>
   );
 
@@ -60,7 +52,7 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <NavLink to="/login" className="btn">Login</NavLink>
+         <NavLink to="/login" className="btn btn-outline btn-sm mr-2">Login</NavLink>
       </div>
     </div>
   );
